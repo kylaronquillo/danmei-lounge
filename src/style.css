@@ -8,6 +8,7 @@
 
 body {
     font-family: Montserrat, sans-serif;
+
 }
 
 nav {
@@ -111,4 +112,7 @@ section {
     background-size: cover;
     height: calc(100vh - 80px);
 }
-  
+
+.image{
+    max-width: 100%;
+}
