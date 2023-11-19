@@ -8,7 +8,6 @@
 
 body {
     font-family: Montserrat, sans-serif;
-
 }
 
 nav {
@@ -75,7 +74,9 @@ display: none;
     nav ul li a{
         font-size: 16px;
     }
+
 }
+
 @media (max-width: 858px){
     .checkbtn{
         display: block;
