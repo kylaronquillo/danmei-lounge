@@ -21,10 +21,11 @@ nav {
 
 label.logoname {
     color: #EDBFE8;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Times New Roman';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 50px;
     padding: 20px;
+    letter-spacing: 3px;
     font-weight: bold;
 }
 
@@ -37,12 +38,12 @@ nav ul {
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: whitesmoke;
-    font-size: 15px;
+    font-size: 20px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
@@ -61,11 +62,46 @@ a.active, a:hover {
     margin-left: 20px;
     cursor: pointer;
     display: none;
-  }
+}
   
 #check{
 display: none;
 }
+
+section {
+    background: no-repeat, url(../images/yo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    color: #fff;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 150px;
+    padding-left: 150px;
+    padding-top: 180px;
+    letter-spacing: 2px;
+}
+
+.content p{
+    font-family: Arial;
+    font-size: 20px;
+    padding-left: 30px;
+    letter-spacing: 1.5px;
+    padding-left: 150px;
+    line-height: 30px;
+    text-align: justify;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 952px){
     label.logo{
         font-size: 30px;
@@ -74,7 +110,16 @@ display: none;
     nav ul li a{
         font-size: 16px;
     }
-
+    .content h1{
+        font-size: 100px;
+        padding-left: 100px;
+        padding-top: 120px;
+    }
+    .content p{
+        font-size: 13px;
+        padding-left: 60px;
+        font-weight: bold;
+    }
 }
 
 @media (max-width: 858px){
@@ -98,22 +143,23 @@ display: none;
     }
     nav ul li a{
         font-size: 20px;
+        font-weight: bold;
     }
     a:hover,a.active{
         background: none;
         color: #EDBFE8;
     }
-
     #check:checked ~ ul{
         left: 0;
     }
-}
-section {
-    background: no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-}
-
-.image{
-    max-width: 100%;
+    .content h1{
+        font-size: 100px;
+        padding-left: 65px;
+        padding-top: 120px;
+    }
+    .content p{
+        font-size: 13px;
+        padding-left: 65px;
+        font-weight: bold;
+    }
 }
